@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="config_buttonCornerRadius">32.0dip</dimen>
+    <dimen name="config_dialogCornerRadius">32.0dip</dimen>
+    <dimen name="rounded_corner_radius">70.0px</dimen>
+    <dimen name="rounded_corner_radius_top">70.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom">70.0px</dimen>
+    <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
+</resources>

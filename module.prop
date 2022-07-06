@@ -1,0 +1,7 @@
+id=FixRoundedCorners
+name=Fix Rounded Corners
+version=v1.0.0
+versionCode=1
+author=@Syoker
+description=This module fixes the rounding in the system, making it fit the rounded corners of the Motorola One Fusion.
+updateJson=

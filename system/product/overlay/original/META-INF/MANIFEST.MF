@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Made-By: apk-signer::fd3444ad7ffe1ea::83::2022-07-06-02:13:48
+Built-By: Generated-by-ADT
+Created-By: Android Gradle 3.5.0
+Made-By: apk-signer::fd3444ad7ffe1ea::83::2022-07-06-02:03:24
+
+Name: AndroidManifest.xml
+SHA-256-Digest: kuTdYiydv9743NIRNm5mxn6BQmpnTemU/hagf8+20nA=
+
+Name: res/xml/config_webview_packages.xml
+SHA-256-Digest: W1dObBqVN6QTlfGXpIOF/gksQqeVEGeKy4eAl9ZL7z4=
+
+Name: resources.arsc
+SHA-256-Digest: SRFN0x6j7Xz20w7jEaeZMO8No6GYuycS26gImFAtzM8=
+
