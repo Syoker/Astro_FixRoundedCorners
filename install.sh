@@ -36,12 +36,21 @@ on_install() {
 
   if [[ $API == 30 ]]; then
     unzip $MODPATH/system/product/overlay/android11.zip -d $MODPATH/system/product/overlay/
-    rm $MODPATH/system/product/overlay/android12.zip
+    rm $MODPATH/system/product/overlay/android12l.zip
+    rm $MODPATH/system/product/overlay/android12s.zip
     rm $MODPATH/system/product/overlay/android11.zip
   else
-    unzip $MODPATH/system/product/overlay/android12.zip -d $MODPATH/system/product/overlay/
-    rm $MODPATH/system/product/overlay/android12.zip
-    rm $MODPATH/system/product/overlay/android11.zip
+    if [[ $API == 31 ]]; then
+      unzip $MODPATH/system/product/overlay/android12s.zip -d $MODPATH/system/product/overlay/
+      rm $MODPATH/system/product/overlay/android12l.zip
+      rm $MODPATH/system/product/overlay/android12s.zip
+      rm $MODPATH/system/product/overlay/android11.zip
+    else
+      unzip $MODPATH/system/product/overlay/android12l.zip -d $MODPATH/system/product/overlay/
+      rm $MODPATH/system/product/overlay/android12l.zip
+      rm $MODPATH/system/product/overlay/android12s.zip
+      rm $MODPATH/system/product/overlay/android11.zip
+    fi
   fi
 
   ui_print "- Deleting package cache"
