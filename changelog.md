@@ -1,5 +1,8 @@
 ## Changelog
 
+### v1.0.3
+- Installation method changed (magisk log now looks better)
+
 ### v1.0.2
 - Fixed bug that caused SystemUI crashes on Android 12S
 
