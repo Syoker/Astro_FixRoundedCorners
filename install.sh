@@ -35,21 +35,21 @@ on_install() {
   ui_print "- Extracting module files"
 
   if [[ $API == 30 ]]; then
-    unzip $MODPATH/system/product/overlay/android11.zip -d $MODPATH/system/product/overlay/
-    rm $MODPATH/system/product/overlay/android12l.zip
-    rm $MODPATH/system/product/overlay/android12s.zip
-    rm $MODPATH/system/product/overlay/android11.zip
+    mkdir -p $MODPATH/system/product/overlay
+    mv -f $MODPATH/system/product/overlay/android11.apk $MODPATH/system/product/overlay/framework-res__auto_generated_rro_product.apk
+    rm $MODPATH/system/product/overlay/android12.apk
+    rm $MODPATH/system/product/overlay/android12l.apk
   else
     if [[ $API == 31 ]]; then
-      unzip $MODPATH/system/product/overlay/android12s.zip -d $MODPATH/system/product/overlay/
-      rm $MODPATH/system/product/overlay/android12l.zip
-      rm $MODPATH/system/product/overlay/android12s.zip
-      rm $MODPATH/system/product/overlay/android11.zip
+      mkdir -p $MODPATH/system/product/overlay
+      mv -f $MODPATH/system/product/overlay/android12.apk $MODPATH/system/product/overlay/framework-res__auto_generated_rro_product.apk
+      rm $MODPATH/system/product/overlay/android11.apk
+      rm $MODPATH/system/product/overlay/android12l.apk
     else
-      unzip $MODPATH/system/product/overlay/android12l.zip -d $MODPATH/system/product/overlay/
-      rm $MODPATH/system/product/overlay/android12l.zip
-      rm $MODPATH/system/product/overlay/android12s.zip
-      rm $MODPATH/system/product/overlay/android11.zip
+      mkdir -p $MODPATH/system/product/overlay
+      mv -f $MODPATH/system/product/overlay/android12l.apk $MODPATH/system/product/overlay/framework-res__auto_generated_rro_product.apk
+      rm $MODPATH/system/product/overlay/android11.apk
+      rm $MODPATH/system/product/overlay/android12.apk
     fi
   fi
 
